@@ -23,3 +23,7 @@ console.clear();
 for (let hero of heroes) {
 	console.log(hero);
 }
+
+//Bad perfomance function, it searches the entire array looking for the specified value, so if theres a big array it will cause throttling
+const thrall = heroes.find((hero) => hero === 'Thrall');
+console.log(thrall);
