@@ -35,3 +35,16 @@ console.clear();
 for (let hero of heroes) {
 	console.log(hero);
 }
+
+//Matrix {
+console.clear();
+const cards = [
+	['Dreamwalker', 8, 8, 8],
+	['Angry Murloc', 1, 1, 1],
+	['Old Farmer', 2, 3, 3]
+];
+
+for (let card of cards) {
+	console.log(card);
+}
+//}
