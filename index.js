@@ -13,4 +13,6 @@ const heroes = [
 
 console.log(heroes.length);
 
-for
+for (let hero of heroes) {
+	console.log(hero);
+}
