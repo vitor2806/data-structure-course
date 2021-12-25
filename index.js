@@ -89,3 +89,32 @@ console.log(stack.pop());
 
 console.log(stack.peek());
 //}
+
+//Queue {
+//Fifo, First in first out, first person to enter queue is the first to leave
+class Queue {
+	constructor() {
+		this.data = [];
+	}
+
+	enqueue(person) {
+		this.data.push(person);
+		console.log(`${person} has enter the lobby queue.`);
+	}
+
+	dequeue() {
+		const person = this.data.shift();
+		console.log(`${person} has left the lobby queue.`);
+	}
+}
+
+const queue = new Queue();
+
+queue.enqueue('Tyrkelz');
+queue.enqueue('Supershock');
+queue.enqueue('Joseph123');
+queue.enqueue('Noobmaster');
+
+queue.dequeue();
+queue.dequeue();
+//}
