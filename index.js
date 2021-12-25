@@ -16,3 +16,10 @@ console.log(heroes.length);
 for (let hero of heroes) {
 	console.log(hero);
 }
+
+heroes.push('Varian');
+console.clear();
+
+for (let hero of heroes) {
+	console.log(hero);
+}
