@@ -48,3 +48,33 @@ for (let card of cards) {
 	console.log(card);
 }
 //}
+
+//Stack {
+//Stack is a linear structure, if I need to remove the last element, I need to unstack all others
+class Stack {
+	constructor() {
+		this.data = [];
+		this.top = -1;
+	}
+
+	push(value) {
+		this.top++;
+		this.data[this.top] = value;
+		return this.data;
+	}
+
+	pop() {
+		if (this.top < 0) return undefined;
+		const poppedTop = this.data[this.top];
+		delete this.data[this.top];
+		this.top--;
+		return poppedTop;
+	}
+
+	peek() {
+		return this.top >= 0 ? this.data[this.top] : undefined;
+	}
+}
+
+const stack = new Stack();
+//}
