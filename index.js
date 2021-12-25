@@ -10,3 +10,7 @@ const heroes = [
 	'Anduin',
 	'Maiev'
 ];
+
+console.log(heroes.length);
+
+for
