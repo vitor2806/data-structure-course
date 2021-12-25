@@ -77,4 +77,15 @@ class Stack {
 }
 
 const stack = new Stack();
+
+stack.push('Player one attacked Player two');
+stack.push('Player two attacked Player one');
+console.log(stack.push('Player one dodged Player two attack'));
+
+console.log(stack.peek());
+
+stack.pop();
+console.log(stack.pop());
+
+console.log(stack.peek());
 //}
